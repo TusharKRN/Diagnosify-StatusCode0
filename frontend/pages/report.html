@@ -9,6 +9,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/info.css">
+    <link rel="stylesheet" href="../css/symptoms.css">
+    <link rel="stylesheet" href="../css/report.css">
+
 </head>
 
 <body>
@@ -31,40 +34,61 @@
                     </ul>
                 </div>
             </nav>
-
             <div class="heading-text">
-                <p>Fill Your Basic Details</p>
+                <p>Answer these questions before <br>choosing the symptoms:</p>
             </div>
         </div>
         <main>
 
+
             <!-- breadcrumbs -->
             <div class="bcrumbs">
-                <a href="./info.html" class="active">Personal Information</a>
+                <a href="./info.html">Personal Information</a>
                 <img src="../assets/arrow.svg" alt="->">
                 <a href="./questions.html">Questionnaire</a>
                 <img src="../assets/arrow.svg" alt="->">
                 <a href="./symptoms.html">Symptoms Selection</a>
                 <img src="../assets/arrow.svg" alt="->">
-                <a href="../pages/report.html">Get your Report</a>
+                <a href="../pages/report.html" class="active">Get your Report</a>
+            </div>
+
+            <!-- Report wala section starts -->
+            <div class="container">
+                <h2>Your Info:</h2>
+                <div class="basic-info">
+                    <div class="name">Name: <span id="name">Ajay</span> </div><br>
+                    <div class="details">
+                        <div>Age: <span id="age">21</span></div>
+                        <div>Height: <span id="height">168 cm</span></div>
+                        <div>Weight:<span id="weight">75 kg</span></div>
+                    </div>
+                    <div>Your BMI Index is: <span id="bmi"></span></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Disease Prediction:</h2>
+                <p>As per the symptoms you added, the system predicts that you might be suffering from:</p>
+                <h2 id="result">Esophageal Cancer</h2>
+                <p id="desc">Esophageal cancer is cancer that occurs in the esophagus — a long, hollow tube that runs from your throat to your stomach. Your esophagus helps move the food you swallow from the back of your throat to your stomach to be digested. Esophageal
+                    cancer usually begins in the cells that line the inside of the esophagus.</p>
+                <br>
+                <h2>Precautions:</h2>
+                <div id="precautions"></div>
+                <br>
+                <div class="view" id="view">Find More Details</div>
+                <div class="hide" id="more">
+                    <h2>Find your nearest Hospital</h2>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/search/diabetes+hospital+near+me"></iframe>
+                    </div>
+                </div>
             </div>
 
 
-            <form action="#">
 
-                <input type="text" name="fullname" id="name" placeholder="Full Name" class="form full">
-                <select name="age" id="age" width="50%">
-                    <option value="male">Male</option>
-                    <option value="male">Female</option>
-                    <option value="male">Rather not specify</option>
-                </select>
-                <input type="number" name="age" placeholder="Age" class="form">
-                <input type="number" name="height" placeholder="Height (in cm)" class="form">
-                <input type="number" name="weight" placeholder="Weight (in kg)" class="form">
+            <a class="red-button" href="./info.html">Diagnose Again</a>
 
-                <a class="red-button" id="next" href="./questions.html">Next</a>
-
-            </form>
         </main>
 
         <!-- footer -->
@@ -90,9 +114,12 @@
 
         </div>
 
-
-
     </div>
+
+
+
+
+    <script src="../js/report.js"></script>
 </body>
 
 </html>
