@@ -11,6 +11,73 @@ body {
     min-height: 100vh;
 }
 
+/* Nav-Bar */
+
+.hero-wrapper{
+    width: 100%;
+    background: #10449f;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 72px;
+    padding-top: 56px;
+} 
+
+.nav-bar img {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+    align-self: stretch;
+}
+
+.nav-right ul li {
+    list-style: none;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.diagnose-now a button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    border-radius: 32px;
+    background: #ee2e31;
+    border: none;
+}
+
+.diagnose-now a button{ 
+    color: #fff;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 
 /* footer */
 
