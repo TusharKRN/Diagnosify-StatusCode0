@@ -39,6 +39,33 @@
         </div>
         <main>
             <!-- Ajay Code Here -->
+
+            <!-- breadcrumbs -->
+            <div class="bcrumbs">
+                <a href="./info.html">Personal Information</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="./questions.html">Questionnaire</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="./symptoms.html" class="active">Symptoms Selection</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="#">Get your Report</a>
+            </div>
+
+            <div class="container">
+                <h2>Select Symptoms:</h2>
+                <input type="text" id="searchBar" placeholder="Search symptoms">
+                <div class="symptoms">
+                    <!-- Symptoms will be dynamically populated here -->
+                </div>
+            </div>
+            <div class="container">
+                <h2>Selected Symptoms:</h2>
+                <div class="selected-symptoms">
+                    <!-- Selected symptoms will be displayed here -->
+                </div>
+            </div>
+
+
         </main>
 
         <!-- footer -->
@@ -69,7 +96,7 @@
 
 
 
-    <script src=""></script>
+    <script src="../js/symptoms.js"></script>
 </body>
 
 </html>
