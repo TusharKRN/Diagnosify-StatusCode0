@@ -49,17 +49,45 @@
 
 
             <div class="questions">
+                <!-- Slider  -->
                 <div class="question">
                     <h3>
                         1. Are you having a headache?
                     </h3>
                     <span class="comment">If yes, rate on the scale of 10</span>
                     <div class="slider">
-                        <span id="value">0</span>
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <span class="value">0</span>
+                        <input type="range" min="0" max="10" value="0" class="slider-bar" id="myRange">
                         <span>10</span>
                     </div>
                 </div>
+                <!-- Slider  -->
+                <div class="question">
+                    <h3>
+                        1. Are you having a headache?
+                    </h3>
+                    <span class="comment">If yes, rate on the scale of 10</span>
+                    <div class="slider">
+                        <span class="value">0</span>
+                        <input type="range" min="0" max="10" value="0" class="slider-bar" id="myRange">
+                        <span>10</span>
+                    </div>
+                </div>
+                <!-- Slider  -->
+                <div class="question">
+                    <h3>
+                        1. Are you having a headache?
+                    </h3>
+                    <span class="comment">If yes, rate on the scale of 10</span>
+                    <div class="slider">
+                        <span class="value">0</span>
+                        <input type="range" min="0" max="10" value="0" class="slider-bar" id="myRange">
+                        <span>10</span>
+                    </div>
+                </div>
+
+                <div class="slider"><label for="fader">Volume </label><input type="range" min="0" max="100" value="50" id="fader" step="20" list="volsettings"><datalist id="volsettings"><option>0</option><option>20</option><option>40</option><option>60</option><option>80</option><option>100</option></datalist></div>
+
 
             </div>
         </main>
@@ -92,7 +120,7 @@
 
 
 
-
+    <script src="../js/question.js"></script>
 </body>
 
 </html>
