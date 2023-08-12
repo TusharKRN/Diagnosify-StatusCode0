@@ -7,18 +7,17 @@
     <title>Diagnosify</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/info.css">
 </head>
 
 <body>
 
     <div class="wrapper">
-
         <div class="hero-wrapper">
             <nav class="nav-bar">
                 <div class="nav-left">
-                    <img src="./assets/logo.svg" alt="Logo">
+                    <img src="../assets/logo.svg" alt="Logo">
                 </div>
                 <div class="nav-right">
                     <ul>
@@ -33,40 +32,48 @@
                 </div>
             </nav>
 
-            <!-- Hero Section -->
-
-            <div class="hero-main">
-                <div class="hero-left">
-                    <div class="heading">
-                        <p>Introducing Diagnosify:<br>Your At-Home Disease<br>Diagnosis Companion</p>
-                    </div>
-                    <div class="heading-desc">
-                        <p>Take control of your health from the comfort of your home with Diagnosify - the revolutionary web app designed to empower you with accurate disease diagnosis based on your symptoms. No more waiting rooms or uncertainty; Diagnosify
-                            brings medical expertise right to your fingertips.</p>
-                    </div>
-                    <div class="white-border">
-                        <a href=""><button>Try Diagnosify Now!</button></a>
-                    </div>
-                </div>
-                <div class="hero-right">
-                    <img src="./assets/homepage.png" alt="">
-                </div>
+            <div class="heading-text">
+                <p>Fill Your Basic Details</p>
             </div>
         </div>
+        <main>
+
+            <!-- breadcrumbs -->
+            <div class="bcrumbs">
+                <a href="./info.html" class="active">Personal Information</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="./questions.html">Questionnaire</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="./symptoms.html">Symptoms Selection</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="#">Get your Report</a>
+            </div>
 
 
+            <form action="#">
 
-        </div>
+                <input type="text" name="fullname" id="name" placeholder="Full Name" class="form full">
+                <select name="age" id="age" width="50%">
+                    <option value="male">Male</option>
+                    <option value="male">Female</option>
+                    <option value="male">Rather not specify</option>
+                </select>
+                <input type="number" name="age" placeholder="Age" class="form">
+                <input type="number" name="height" placeholder="Height (in cm)" class="form">
+                <input type="number" name="weight" placeholder="Weight (in kg)" class="form">
 
+                <a class="red-button">Next</a>
 
+            </form>
+        </main>
 
-        <!-- Footer -->
+        <!-- footer -->
 
         <div class="footer-wrapper">
             <div class="footer-section">
                 <div class="footer-top">
                     <div class="footer-top-left">
-                        <img src="./assets/logo.svg" alt="">
+                        <img src="../assets/logo.svg" alt="">
                     </div>
                     <div class="footer-top-right">
                         <p>Made with 💗 by Team 8848 | Copyright 2023, Team 8848</p>
@@ -86,11 +93,6 @@
 
 
     </div>
-
-
-
-
-
 </body>
 
 </html>

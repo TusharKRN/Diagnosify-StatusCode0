@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosify</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/info.css">
+    <link rel="stylesheet" href="../css/ques.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="hero-wrapper">
+            <nav class="nav-bar">
+                <div class="nav-left">
+                    <img src="../assets/logo.svg" alt="Logo">
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li class="nav-item"><a href="/">Home</a></li>
+                        <li class="nav-item"><a href="">About</a></li>
+                        <li class="nav-item"><a href="">Our Team</a></li>
+                        <li class="nav-item"><a href="">Contact Us</a></li>
+                        <li class="nav-item diagnose-now">
+                            <a href="./html/questions.html"><button>Diagnose Now</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="heading-text">
+                <p>Answer these questions before <br>choosing the symptoms:</p>
+            </div>
+        </div>
+        <main>
+            <!-- breadcrumbs -->
+            <div class="bcrumbs">
+                <a href="./info.html">Personal Information</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="./questions.html" class="active">Questionnaire</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="./symptoms.html">Symptoms Selection</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="#">Get your Report</a>
+            </div>
+
+
+
+            <div class="questions">
+                <!-- Slider  -->
+                <div class="question">
+                    <h3>
+                        1. Are you having a headache?
+                    </h3>
+                    <span class="comment">If yes, rate on the scale of 10</span>
+                    <div class="slider">
+                        <span class="value">0</span>
+                        <input type="range" min="0" max="10" value="0" class="slider-bar" id="myRange">
+                        <span>10</span>
+                    </div>
+                </div>
+                <!-- Slider  -->
+                <div class="question">
+                    <h3>
+                        2. Are you suffering from Fever?
+                    </h3>
+                    <span class="comment">If yes, rate on the scale of 10</span>
+                    <div class="slider">
+                        <span class="value">0</span>
+                        <input type="range" min="0" max="10" value="0" class="slider-bar" id="myRange">
+                        <span>10</span>
+                    </div>
+                </div>
+                <!-- Slider  -->
+                <div class="question">
+                    <h3>
+                        3. Are you fatigued?
+                    </h3>
+                    <span class="comment">If yes, rate on the scale of 10</span>
+                    <div class="slider">
+                        <span class="value">0</span>
+                        <input type="range" min="0" max="10" value="0" class="slider-bar" id="myRange">
+                        <span>10</span>
+                    </div>
+                </div>
+
+                <!-- Slider  -->
+                <div class="question">
+                    <h3>
+                        4. Are you having Sharp Abdominal Pain?
+                    </h3>
+                    <span class="comment">If yes, rate on the scale of 10</span>
+                    <div class="slider">
+                        <span class="value">0</span>
+                        <input type="range" min="0" max="10" value="0" class="slider-bar" id="myRange">
+                        <span>10</span>
+                    </div>
+                </div>
+
+                <!-- Slider  -->
+                <div class="question">
+                    <h3>
+                        5. Are you feeling Dizzy?
+                    </h3>
+                    <span class="comment">If yes, rate on the scale of 10</span>
+                    <div class="slider">
+                        <span class="value">0</span>
+                        <input type="range" min="0" max="10" value="0" class="slider-bar" id="myRange">
+                        <span>10</span>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </main>
+
+        <!-- footer -->
+
+        <div class="footer-wrapper">
+            <div class="footer-section">
+                <div class="footer-top">
+                    <div class="footer-top-left">
+                        <img src="../assets/logo.svg" alt="">
+                    </div>
+                    <div class="footer-top-right">
+                        <p>Made with 💗 by Team 8848 | Copyright 2023, Team 8848</p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-text">
+                        This disease prediction model is based on Random forest algorithm with almost 95% accuracy. This is a small hackathon project. Please don’t rely fully upon this for your diagnose as there’s more to evolve for this project to give accurate information
+                        related to the disease. We suggest to consult with doctors if the symptoms are quite serious.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="../js/question.js"></script>
+</body>
+
+</html>

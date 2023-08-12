@@ -7,18 +7,19 @@
     <title>Diagnosify</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/info.css">
+    <link rel="stylesheet" href="../css/symptoms.css">
+
 </head>
 
 <body>
 
     <div class="wrapper">
-
         <div class="hero-wrapper">
             <nav class="nav-bar">
                 <div class="nav-left">
-                    <img src="./assets/logo.svg" alt="Logo">
+                    <img src="../assets/logo.svg" alt="Logo">
                 </div>
                 <div class="nav-right">
                     <ul>
@@ -32,41 +33,48 @@
                     </ul>
                 </div>
             </nav>
-
-            <!-- Hero Section -->
-
-            <div class="hero-main">
-                <div class="hero-left">
-                    <div class="heading">
-                        <p>Introducing Diagnosify:<br>Your At-Home Disease<br>Diagnosis Companion</p>
-                    </div>
-                    <div class="heading-desc">
-                        <p>Take control of your health from the comfort of your home with Diagnosify - the revolutionary web app designed to empower you with accurate disease diagnosis based on your symptoms. No more waiting rooms or uncertainty; Diagnosify
-                            brings medical expertise right to your fingertips.</p>
-                    </div>
-                    <div class="white-border">
-                        <a href=""><button>Try Diagnosify Now!</button></a>
-                    </div>
-                </div>
-                <div class="hero-right">
-                    <img src="./assets/homepage.png" alt="">
-                </div>
+            <div class="heading-text">
+                <p>Answer these questions before <br>choosing the symptoms:</p>
             </div>
         </div>
+        <main>
+            <!-- Ajay Code Here -->
+
+            <!-- breadcrumbs -->
+            <div class="bcrumbs">
+                <a href="./info.html">Personal Information</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="./questions.html">Questionnaire</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="./symptoms.html" class="active">Symptoms Selection</a>
+                <img src="../assets/arrow.svg" alt="->">
+                <a href="#">Get your Report</a>
+            </div>
+
+            <div class="container">
+                <h2>Select Symptoms:</h2>
+                <input type="text" id="searchBar" placeholder="Search symptoms">
+                <div class="symptoms">
+
+                </div>
+            </div>
+            <div class="container">
+                <h2>Selected Symptoms:</h2>
+                <div class="selected-symptoms">
+
+                </div>
+            </div>
 
 
+        </main>
 
-        </div>
-
-
-
-        <!-- Footer -->
+        <!-- footer -->
 
         <div class="footer-wrapper">
             <div class="footer-section">
                 <div class="footer-top">
                     <div class="footer-top-left">
-                        <img src="./assets/logo.svg" alt="">
+                        <img src="../assets/logo.svg" alt="">
                     </div>
                     <div class="footer-top-right">
                         <p>Made with 💗 by Team 8848 | Copyright 2023, Team 8848</p>
@@ -83,14 +91,12 @@
 
         </div>
 
-
-
     </div>
 
 
 
 
-
+    <script src="../js/symptoms.js"></script>
 </body>
 
 </html>
