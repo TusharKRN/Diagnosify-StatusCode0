@@ -49,7 +49,7 @@
   .white-border button {
     padding: 16px 56px;
     border-radius: 80px;
-    background: var(--primary-red, #c9002b);
+    background: var(--primary-red, #EE2E31);
     border: none;
     color: #fff;
     font-family: Poppins;
