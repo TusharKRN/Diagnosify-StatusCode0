@@ -10,3 +10,14 @@ for (var i = 0; i < sliders.length; i++) {
         }
     });
 }
+
+var next = document.getElementById("next");
+var ans = '';
+next.onclick = function() {
+    for (var i = 0; i < sliders.length; i++) {
+        if (sliders[i].value >= 5) {
+            ans += i;
+        }
+    }
+    sessionStorage.setItem("ans", ans);
+}

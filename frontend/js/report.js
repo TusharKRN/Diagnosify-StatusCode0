@@ -1,6 +1,9 @@
 var view = document.getElementById("view");
 var more = document.getElementById("more");
+var bmiVal = sessionStorage.getItem("bmi");
 
+var bmi = document.getElementById("bmi");
+bmi.innerHTML = bmiVal;
 view.onclick = showMore;
 
 
@@ -14,3 +17,6 @@ function showMore() {
         more.classList.add("hide");
     }
 }
+
+var ans = sessionStorage.getItem("ans");
+console.log(ans);
